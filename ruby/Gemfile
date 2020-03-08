@@ -1,0 +1,3 @@
+# gcp client for ai platform query
+gem 'google-cloud-storage'
+gem 'google-api-client', '~> 0.34'
