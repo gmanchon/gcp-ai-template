@@ -1,10 +1,4 @@
 
-# sources
-
-[gcp day 5 correction](https://github.com/lewagon/taxi-fare) contains a working solution with a different file architecture
-
-[gcp day 4 notebook instructions](https://github.com/lewagon/data-challenges/blob/master/05-Production/04-Deploy-to-Production/Challenge/04-Deploy-to-Production-Challenge.ipynb) contains informations required in order to setup the gcp account
-
 # usage
 
 1. conf: fill all the variables in `Model/conf.py`
@@ -185,3 +179,9 @@ select model, `create a version`
 - `machine type`: ai platform machine types / single core cpu
 - model uri: browse / wagon-data-grupo-bimbo-sales / models / static_baseline_fixed_resp_4 / v_1 / select (generates wagon-data-grupo-bimbo-sales/models/static_baseline_fixed_resp_4/v_1/)
 - save
+
+# sources
+
+[gcp day 5 correction](https://github.com/lewagon/taxi-fare) contains a working solution with a different file architecture
+
+[gcp day 4 notebook instructions](https://github.com/lewagon/data-challenges/blob/master/05-Production/04-Deploy-to-Production/Challenge/04-Deploy-to-Production-Challenge.ipynb) contains informations required in order to setup the gcp account
