@@ -42,7 +42,7 @@ def predict_json(project, model, instances, version=None):
 # get data
 df = get_test_data().head(100) # only predict for the first 100 rows
 
-# apply preprocess
+# apply preprocessing
 X_test, y_test = preprocess(df)
 
 # convert X_test to json

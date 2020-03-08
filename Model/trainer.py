@@ -49,7 +49,7 @@ def save_model(model):
 # retrieve data
 df = get_data()
 
-# get X and y
+# apply preprocessing
 X_train, y_train = preprocess(df)
 
 # retrieve model
