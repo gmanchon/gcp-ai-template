@@ -47,6 +47,9 @@ REQUIRED_PACKAGES=[
     'scipy==1.2.2',
     'scikit-learn==0.20.4']
 
+# job prefix
+JOB_PREFIX="static_model"
+
 # ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^
 #
 # gcp storage
@@ -68,6 +71,3 @@ BUCKET_MODEL_DUMP_NAME='model.joblib'             # required dump name (do not c
 
 # model training folder
 JOB_FOLDER="trainings"
-
-# job prefix
-JOB_PREFIX="static_model"
