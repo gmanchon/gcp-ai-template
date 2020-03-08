@@ -1,2 +1,3 @@
 *.joblib
+*.pyc
 __pycache__
