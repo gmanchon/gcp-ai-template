@@ -32,6 +32,8 @@ you will find instructions below
 
 ## model
 
+disclaimer: the code currently in the model makes no sense whatsoever, it is just there as a placeholder in order to showcase how to plug the model to the package
+
 `conf.py` stores the variables of the project (package name and entry file, gcp project, model, model version, bucket)
 
 `predict.py` can be used outside of the package and is used locally in order to request from gcp a prediction by a trained model
