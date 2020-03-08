@@ -24,6 +24,10 @@ you will find instructions below
 
 `setup.py` is used by gcp in order to setup the training environement
 
+## data
+
+`train_100k.csv` and `test_10k.csv` both contain one sample line of data so that the code may hopefully run without too much head scratching
+
 ## model
 
 disclaimer: the code currently in the model makes no sense whatsoever, it is just there as a placeholder in order to showcase how to plug the model to the package
