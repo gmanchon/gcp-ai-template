@@ -62,7 +62,7 @@ class SalesController < ApplicationController
     @ml_service = Google::Apis::MlV1::CloudMachineLearningEngineService.new
     @ml_service.authorization = authorization
 
-    # data
+    # X_test data, todo: ⚠️ apply the preprocessing done on X_train during training ⚠️
     instances = {
       instances: [
         [1213],
