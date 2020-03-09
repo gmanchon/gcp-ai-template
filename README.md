@@ -139,7 +139,7 @@ in `navigation menu`, `api & services`, `credentials`, `create credentials`, `se
 
 or [use this link](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
 
-store the key on your disk (⚠️ do NOT add the json key to source control)
+store the key on your disk ( ⚠️ do NOT add the json key to source control ⚠️ )
 
 edit `~/.zshrc` to add an env variable:
 
