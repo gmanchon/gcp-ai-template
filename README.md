@@ -139,11 +139,15 @@ in `navigation menu`, `api & services`, `credentials`, `create credentials`, `se
 
 or [use this link](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
 
-store on disk and edit `~/.zshrc` to add env variable
+store the key on your disk (⚠️ do NOT add the json key to source control)
+
+edit `~/.zshrc` to add an env variable:
 
 ``` zsh
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/key.json"
 ```
+
+check that the content of the file is correct:
 
 ``` zsh
 echo $GOOGLE_APPLICATION_CREDENTIALS
@@ -166,7 +170,7 @@ in `navigation menu`, `storage`, wagon-data-grupo-bimbo-sales, in
 [available runtimes](https://cloud.google.com/ai-platform/training/docs/runtime-version-list
 )
 
-in `navigation menu`, `ai platform`, `models`, `create bucket`
+in `navigation menu`, `ai platform`, `models`, `new model`
 
 enable `AI Platform Training & Prediction API`
 
