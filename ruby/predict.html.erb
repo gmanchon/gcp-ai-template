@@ -1,0 +1,25 @@
+<h1>Sales prediction</h1>
+
+<h2>bucket service</h2>
+
+<p>test file downloaded: <%= @downloaded_file_path.nil? ? 'no' : @downloaded_file_path %></p>
+
+<h2>discovery service</h2>
+
+<p>discovery service called: <%= @service_discovery.nil? ? 'no' : @service_discovery %></p>
+
+<p><%#= raw(@service_discovery.inspect.gsub(/@/, '<br>&nbsp;&nbsp;@')) %></p>
+
+<h2>ml engine service</h2>
+
+<p>ml engine service called: <%= @ml_service.nil? ? 'no' : @ml_service %></p>
+
+<% unless @ml_service.nil? %>
+
+  <p><%#= raw(@ml_service.inspect.gsub(/@/, '<br>&nbsp;&nbsp;@')) %></p>
+
+  <p>result: <%= @ml_result.nil? ? 'no' : @ml_result %></p>
+
+  <p>error: <%= @ml_err.nil? ? 'no' : @ml_err %></p>
+
+<% end %>
