@@ -8,14 +8,19 @@
 # and by model predict code
 #
 
+# /!\ do not use inline comments at the end of the lines /!\
+# this file is parsed by the Makefile
+# and those comments will mess with the shell variables it uses
+
 # ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^ ~ ^
 #
 # python model package
 #
 
 # folder name
-PACKAGE_NAME="Model"                              # you probably do not want to change this
-                                                  # if you do, change in all files (cf README usage section)
+# you probably do not want to change this
+# if you do, change in all files (cf README usage section)
+PACKAGE_NAME="Model"
 PACKAGE_DESCRIPTION="static prediction model"
 
 # file name

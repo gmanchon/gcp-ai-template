@@ -1,5 +1,5 @@
-# do not use inline comments at the end of the lines,
-# they add additional spaces in the content of the variables,
+# /!\ do not use inline comments at the end of the lines /!\
+# they add additional spaces in the content of the variables
 # which generates errors
 
 #   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-
