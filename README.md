@@ -46,6 +46,8 @@ do not forget that every time you ommit to `bundle install` after editing a `Gem
 
 `sales_controller.rb` contains everything you need in order to make a prediction from a trained model in gcp
 
+`predict.html.erb` contains a view to display the result of the `/sales/predict` route, in particular the success or error code for the ml api call
+
 # tasks
 
 ## show project conf
