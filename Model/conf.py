@@ -14,7 +14,8 @@
 #
 
 # folder name
-PACKAGE_NAME="Model"
+PACKAGE_NAME="Model"                              # you probably do not want to change this
+                                                  # if you do, change in all files (cf README usage section)
 PACKAGE_DESCRIPTION="static prediction model"
 
 # file name
