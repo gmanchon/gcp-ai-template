@@ -8,7 +8,11 @@
 
 <p>discovery service called: <%= @service_discovery.nil? ? 'no' : @service_discovery %></p>
 
-<p><%#= raw(@service_discovery.inspect.gsub(/@/, '<br>&nbsp;&nbsp;@')) %></p>
+<% unless @ml_service.nil? %>
+
+  <p><%#= raw(@service_discovery.inspect.gsub(/@/, '<br>&nbsp;&nbsp;@')) %></p>
+
+<% end %>
 
 <h2>ml engine service</h2>
 
