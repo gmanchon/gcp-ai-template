@@ -47,6 +47,7 @@ RUNTIME_VERSION=1.15
 FRAMEWORK="scikit-learn"
 
 REQUIRED_PACKAGES=[
+    'google-api-python-client==1.7.11',
     'google-cloud-storage==1.26.0',
     'gcsfs==0.6.0',
     'pandas==0.24.2',
