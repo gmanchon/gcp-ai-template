@@ -192,7 +192,7 @@ select model, `create a version`
 
 # Heroku setup
 
-You may want to de ploy a Rails app on Heroku and make it communicate with your model on GCP. Here is the recipe:
+You may want to deploy a Rails app on Heroku and make it communicate with your model on GCP. Here is the recipe:
 - Browse to your Rails application folder then add a [.profile](https://devcenter.heroku.com/articles/dynos#the-profile-file) file to the `app` folder of your Rails application.
 ```bash
 touch app/.profile
