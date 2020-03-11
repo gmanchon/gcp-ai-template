@@ -190,6 +190,29 @@ select model, `create a version`
 - model uri: browse / wagon-data-grupo-bimbo-sales / models / static_baseline_fixed_resp_4 / v_1 / select (generates wagon-data-grupo-bimbo-sales/models/static_baseline_fixed_resp_4/v_1/)
 - save
 
+# Heroku setup
+
+You may want to de ploy a Rails app on Heroku and make it communicate with your model on GCP. Here is the recipe:
+- Browse to your Rails application folder then add a [.profile](https://devcenter.heroku.com/articles/dynos#the-profile-file) file to the `app` folder of your Rails application.
+```bash
+touch app/.profile
+```
+- paste the following code to the `.profile` file. This will copy the value of the `GOOGLE_ACCOUNT_SERVICE_JSON_KEY` to a `google-credentials.json` file.
+```
+echo ${GOOGLE_ACCOUNT_SERVICE_JSON_KEY} > /app/google-credentials.json
+```
+- Set `GOOGLE_ACCOUNT_SERVICE_JSON_KEY` variable on Heroku with the JSON key. Below is a trick to pass a multiline value to a Heroku variable.
+
+:warning: Replace `/path/to/key.json` with your **own** path to the JSON key.
+```bash
+heroku config:set GOOGLE_ACCOUNT_SERVICE_JSON_KEY="$(< /path/to/key.json)"
+```
+- Now you have a relative path for the `GOOGLE_APPLICATION_CREDENTIALS` variable as the Ruby GCP Client requires.
+```bash
+heroku config:set GOOGLE_APPLICATION_CREDENTIALS=google-credentials.json
+```
+👌
+
 # sources
 
 [gcp day 5 correction](https://github.com/lewagon/taxi-fare) contains a working solution with a different file architecture
